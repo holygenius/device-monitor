@@ -1,0 +1,26 @@
+Device Monitor 1.0
+
+Device Monitor application source: MIT License (see bundled licenses/LICENSE).
+
+Sensor reader: macmon v0.10.0, Copyright 2024 vladkens, MIT License.
+https://github.com/vladkens/macmon
+Full notice: licenses/macmon-LICENSE in the application resources.
+Dependency license texts: licenses/macmon-dependencies.html (all lockfile targets).
+
+Python 3.12.14: Python Software Foundation License, including incorporated
+third-party notices. See licenses/PYTHON-LICENSE.txt in the application.
+https://www.python.org/
+
+Tcl/Tk 9.0.4: BSD-style licenses; see licenses/TCL-LICENSE.txt and
+licenses/TK-LICENSE.txt in the application.
+https://www.tcl-lang.org/
+
+Packaged using PyInstaller 6.22.3, GPL with the bootloader exception permitting
+distribution of frozen applications under their own license.
+https://pyinstaller.org/en/stable/license.html
+
+This app makes no network requests. Measurements remain on the device.
+
+PyObjC core and Cocoa bindings 12.2.2: MIT License.
+https://github.com/ronaldoussoren/pyobjc
+Full text: licenses/PYOBJC-LICENSE.txt in the application.

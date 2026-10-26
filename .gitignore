@@ -1,0 +1,16 @@
+.venv/
+.build-env/
+__pycache__/
+*.py[cod]
+.DS_Store
+build/
+dist/
+publish/
+archive/
+launch/
+*.dmg
+*.zip
+*.spec
+*.log
+*-check.json
+SHA256SUMS.txt

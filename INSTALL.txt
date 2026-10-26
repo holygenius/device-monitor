@@ -1,0 +1,48 @@
+DEVICE MONITOR 1.0 — APPLE SILICON
+
+INSTALL
+1. Drag Device Monitor.app onto the Applications shortcut.
+2. Eject this disk image.
+3. Open Device Monitor from Applications.
+
+FIRST OPEN: APPLE SECURITY PROMPT
+This free app is ad-hoc signed and is not Apple notarized.
+If macOS blocks it as an unidentified developer / unverified app:
+1. Try opening Device Monitor once, then dismiss the alert.
+2. Open System Settings > Privacy & Security.
+3. Find Device Monitor in the Security section and choose Open Anyway.
+4. Confirm Open and authenticate if macOS asks.
+Only do this when you trust the download source. Managed Macs may restrict
+this option. No global security changes or Terminal commands are needed.
+Apple's guidance: https://support.apple.com/102445
+
+USE
+Check CPU/GPU activity, temperatures, RAM, swap, and fan RPM. The five-minute
+timeline aligns activity, temperatures, and fan rises. Click Fan events for
+snapshots; these are correlations and do not prove which process caused heat.
+
+The process panel shows names, PIDs, CPU, resident memory, and local listening
+TCP ports visible to your user. Filter Models & servers, sort by CPU or RAM,
+or click a process for a snapshot and a project-folder hint when accessible.
+Process CPU uses one core = 100%, unlike the whole-device CPU tile.
+
+Close/Hide the dashboard to continue in the menu bar. Click the menu-bar
+CPU/temperature reading for compact stats and Show dashboard / Quit.
+Command-Q or Quit Device Monitor stops all monitoring and the sensor helper.
+Sensors reconnect automatically after interruption; View > Reconnect sensors
+also lets you retry manually. Help explains every reading.
+
+COMPATIBILITY
+Apple Silicon (M-series) only. Build target: macOS 11 or newer.
+Tested on macOS 26.6.1 only; older macOS versions are not yet verified.
+Intel Macs are not supported by this build. Fanless models may have no fan
+readings, and sensor availability varies. Monitoring needs no root access.
+Python and all runtime dependencies are bundled inside the app.
+
+PRIVACY
+No accounts, analytics, network requests, or saved monitoring history.
+Activity, process names, and fan-event snapshots stay in memory until quit.
+Command arguments and environment variables are not collected.
+
+Free and open-source (MIT). Third-party licenses are bundled in:
+Device Monitor.app/Contents/Resources/licenses
